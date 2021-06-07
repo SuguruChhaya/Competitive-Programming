@@ -1,0 +1,2 @@
+C:\Users\sugur\Documents\Suguru\C++ files\usaco guide\TryDebugging\Debug\TryDebugging.exe
+C:\Users\sugur\Documents\Suguru\C++ files\usaco guide\TryDebugging\Debug\TryDebugging.pdb
