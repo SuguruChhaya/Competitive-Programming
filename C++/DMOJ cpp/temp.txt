@@ -1,0 +1,18 @@
+and for prefix sum array
+the example could be
+OOOX
+OOOX
+XOOO
+XOOO
+and the prefix sum arryay for row is
+0001
+0001
+1111
+1111
+and for col is :
+0001
+0002
+1002
+2002
+so instead of searching through  a lot of points on the graph to see whether the movement can be made
+you can just get the answer by observing the change in numbers on the two prefix sum arrays
