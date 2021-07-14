@@ -4,6 +4,23 @@
         "ostream": "cpp",
         "xstring": "cpp",
         "vector": "cpp",
-        "hash_map": "cpp"
-    }
+        "hash_map": "cpp",
+        "xutility": "cpp",
+        "tuple": "cpp",
+        "xtree": "cpp",
+        "utility": "cpp",
+        "map": "cpp",
+        "deque": "cpp",
+        "initializer_list": "cpp",
+        "list": "cpp",
+        "type_traits": "cpp",
+        "xhash": "cpp",
+        "set": "cpp",
+        "algorithm": "cpp",
+        "limits": "cpp",
+        "istream": "cpp",
+        "memory": "cpp",
+        "xlocnum": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
 }

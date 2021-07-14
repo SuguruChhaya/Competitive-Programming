@@ -10,4 +10,6 @@ int main(){
     arr1[1] = 5;
     //!C++ arrays are not mutable but why is there such a hard time?
     cout << arr2[1] << "\n";
+
+    cout << (int) 'a';
 }

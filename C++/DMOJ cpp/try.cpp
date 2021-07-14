@@ -6,6 +6,7 @@
 using namespace std;
 
 int main(){
+    /*
     int a = 2;
     int b = 5;
 
@@ -22,4 +23,21 @@ int main(){
         cout << arr[i] << endl;
     }
     cout << d[c];
+    */
+
+    long long a = 0;
+    string s = "AAABBB";
+    while (s[a]=='A'){
+        a++;
+    }
+    //!Supposed to be working...
+    if (a==0){
+
+    }
+    else{
+        while (s[a]=='B'){
+            a++;
+        }
+    }
+    cout <<a;
 }

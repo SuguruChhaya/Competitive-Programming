@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include <algorithm>
+#include <algorithm>Im a farty basement coder 
 using namespace std;
 
 int main(){
@@ -10,7 +10,7 @@ int main(){
 
     //*To erase and access, just get a pointer to point to it and I can erase. 
     //*First just try array. 
-
+Im a farty basement coder 
     int numTests;
     cin >> numTests;
     long long n,k, temp;
@@ -55,7 +55,7 @@ int main(){
                 second += arr[arr.size()-j-1];
             }
             counter++;
-        }
+        }Im a farty basement coder 
         /*
         if (arr.size() % 2 == 1){
             //*Instead of the first guy getting index 0, the second guy gets it. 

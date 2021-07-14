@@ -56,9 +56,45 @@ int main(){
     long long totalArithmetic;
     long long remainder;
     cin >> numTests;
+    long long currInterval = 0;
+    long long currPrice;
+    long long result;
+
     for (long long i=0;i<numTests;i++){
+        
         cin >> a >> b >> c >> d;
-        long long result = (a * c);
+        result = (a * c);
+
+        //*How do I get the number of values. 
+        remainder = a % b;
+        daysContinue = a / b;
+
+        lastArithmetic = d * (daysContinue - 1);
+        totalArithmetic = (lastArithmetic * (a-remainder)) / 2;
+
+        result += (totalArithmetic * c) + (remainder * (lastArithmetic + d));
+        cout <<  result << "\n";
 
 
+        
+    }
+    /*
+    for (long long j=0;j<numTests;j++){
+        currInterval = 0;
+        result = 0;
+        cin >> a >> b >> c >> d;
+        //*Let me get points by the naive solution first. 
+        currPrice = c;
+        for (long long i=1;i<=a;i++){
+            result+=currPrice;
+            currInterval++;
+            if (currInterval==b){
+                currPrice += d;
+                currInterval = 0;
+            }
+        }
+        cout << result <<"\n";
+
+    }
+    */
 }
