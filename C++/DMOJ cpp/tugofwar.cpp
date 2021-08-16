@@ -52,8 +52,10 @@ int main(){
             curr_split++;
         }
         cout << curr_min;
+        /*
         if (i!=n-1){
             cout << " ";
         }
+        */
     }
 }

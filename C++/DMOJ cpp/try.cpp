@@ -40,4 +40,23 @@ int main(){
         }
     }
     cout <<a;
+
+    cout << (int) 'a';
+
+    cout << (5 ^ 3) << endl;
+    double pi = 2*acos(0.0);
+    cout <<pi << endl;
+
+    cout << (-1 % 5) << endl;
+
+    vector <char> ab;
+    ab.push_back('2');
+    ab.push_back('1');
+    sort(ab.begin(), ab.end());
+    cout << ab[0] << "\n";
+
+    freopen("temp.txt", "w", stdout);
+    //!When seg error happens, some weird thing will be printed. 
+    
+    cout << ab[1];
 }

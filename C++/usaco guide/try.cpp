@@ -35,5 +35,29 @@ int main(){
         cout << e << endl;
     }
 
+    cout << '1' - '0' << endl;
 
+    cout << ('ab' < 'ac') << endl;
+
+    pair <long long, long long> p1;
+    p1.first = 0;
+    p1.second = 1; 
+    auto p2 = p1;
+    p2.first = -1;
+    p2.second = 3;
+
+    vector <pair <long long, long long>> arr2;
+    arr2.push_back(p1);
+    arr2.push_back(p2);
+
+    sort(arr2.begin(), arr2.end());
+    cout << arr2[0].first << " " << arr2[0].second << endl;
+
+    vector <vector <long long>> f;
+    f.push_back({1, 2});
+    //!Doesn't change when it is auto. 
+    for (auto e:f){
+        e[1]++;
+    }
+    cout << f[0][1] << endl;
 }

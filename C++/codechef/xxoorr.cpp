@@ -13,7 +13,7 @@ vector <long long> decToBinary(long long n){
 
     return result;
 }
-
+/*
 int main(){
 
     //?Why is it a WA??
@@ -77,4 +77,10 @@ int main(){
     //!I see how bitwise XORs could give unexpected results...
     //*Previous 0s will remain as 0s and 1s will remain as 1s tho...
     
+}
+*/
+
+int main(){
+    auto v = decToBinary(6);
+    cout << v[0];
 }
