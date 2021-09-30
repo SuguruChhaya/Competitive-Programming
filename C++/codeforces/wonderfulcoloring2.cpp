@@ -28,7 +28,7 @@ int main(){
                 d.insert({temp, {i}});
             }
         }
-
+        vector <vector <long long>> color (k+1);
         long long currColor = 1;
         for (auto p:d){
             //*Loop through all the indexes. 
@@ -42,6 +42,7 @@ int main(){
 
                 if (add){
                     result[index] = currColor;
+                    color[currColor].push_back(index);
                     currColor++;
                     if (currColor > k){
                         currColor=1;
@@ -50,6 +51,12 @@ int main(){
                         add = false;
                     }
                 }
+            }
+        }
+
+        if (currColor!=1){
+            for (long long i=currColor-1;i>=1;i--){
+                result[color[i][0]] = 0;
             }
         }
 

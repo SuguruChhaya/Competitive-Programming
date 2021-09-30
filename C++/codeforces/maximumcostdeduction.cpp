@@ -27,16 +27,15 @@ int main(){
         else{
             long long numBlocks = 0;
             
-            for (long long j=0;j<n;j++){
-                if (j==0){}
-                else{
-                    if (s[j]!=s[j-1]){
-                        numBlocks++;
-                    }
+            for (long long j=1;j<n;j++){
+
+                if (s[j]!=s[j-1]){
+                    numBlocks++;
                 }
             }
+            numBlocks++;
 
-            cout << a * n + b * numBlocks << endl;
+            cout << a * n + b * (numBlocks/2+1) << endl;
         }
 
     }

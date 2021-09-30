@@ -1,0 +1,43 @@
+Hello,
+
+I am having trouble with this problem as well. 
+I have approached the problem in a similar way as Kenna_Nemera.
+I also got TLE on CSES. 
+I read the solution and I understand the use of multiset. 
+It helped reduce time. 
+But I wanted to solve the WA issue as well. 
+I ran stress testing but couldn't find anything. 
+
+Code:
+#include <bits/stdc++.h>
+using namespace std;
+ 
+int main(){
+    long long n, k;
+    cin >> n >> k;
+    vector <bool> watched(n, 0);
+    vector <vector <long long>> arr (n, vector <long long>(2));
+    for (long long i=0;i<n;i++){
+        cin >> arr[i][1] >> arr[i][0];
+    }
+    long long ans = 0;
+    sort(arr.begin(), arr.end());
+    for (long long i=0;i<k;i++){
+        long long currTime = 0;
+        for (long long j=0;j<n;j++){
+            if (watched[j]==0 && currTime<=arr[j][1]){
+                currTime = arr[j][0];
+                ans++;
+                watched[j]=1;
+            }
+        }
+    }
+    cout << ans << endl;
+}
+
+Also, I don't know if this is related, but I was confused about this sentence in the internal sol:
+"If there are multiple such elements, choose the greatest one (the member who finished watching his assigned movies the latest)."
+Why is this the case? If I don't do this, could it cause WA?
+For myself and future viewers, it would be appreciated if you could add more detailed explanation. 
+
+

@@ -53,7 +53,8 @@ int main(){
         long long result = 0;
         while (keep_adding(a, b)){
             a.push_back(100);
-            b.insert(b.begin(), 0);
+            b.push_back(0);
+            //!This way I don't have to shift but I still need to pick from the right direction. 
             result++;
         }
 

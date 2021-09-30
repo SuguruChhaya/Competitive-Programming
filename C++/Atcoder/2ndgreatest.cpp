@@ -1,7 +1,4 @@
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#include <set>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main(){
@@ -25,6 +22,7 @@ int main(){
     }
     */
     set <pair <long long, string>> hashset;
+   
     for (int i=0;i<n;i++){
         for (int j=i;j<n;j++){
             //hashset.push_back(max(abs(arr[i][0]-arr[j][0]), abs(arr[i][1]-arr[j][1])));

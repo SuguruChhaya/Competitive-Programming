@@ -4,8 +4,8 @@ using namespace std;
 
 int main(){
 
-    freopen("angry.in", "r", stdin);
-    freopen("angry.out", "w", stdout);
+    //freopen("angry.in", "r", stdin);
+    //freopen("angry.out", "w", stdout);
 
     //!Some WAs why???
     //!Could the blasts go in opposite directions??

@@ -1,8 +1,4 @@
-#include <iostream>
-#include <vector>
-#include <map>
-#include <set>
-#include <deque>
+#include <bits/stdc++.h>
 using namespace std;
 
 
