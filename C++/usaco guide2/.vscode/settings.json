@@ -3,6 +3,9 @@
         "iostream": "cpp",
         "ostream": "cpp",
         "vector": "cpp",
-        "set": "cpp"
+        "set": "cpp",
+        "random": "cpp",
+        "deque": "cpp",
+        "tuple": "cpp"
     }
 }
