@@ -11,6 +11,7 @@ int main(){
     string s;
     cin >> s;
 
+    //!Identifying the infected cow. 
     vector <long long> infected;
     for (long long i=1;i<=n;i++){
         if (s[i-1]=='1'){
@@ -18,8 +19,8 @@ int main(){
             infected.push_back(i);
         }
     }
-
-
+    
+    
     vector <vector <long long>> arr;
     for (long long i=0;i<t;i++){
         long long t, x, y;

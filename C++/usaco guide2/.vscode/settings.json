@@ -6,6 +6,7 @@
         "set": "cpp",
         "random": "cpp",
         "deque": "cpp",
-        "tuple": "cpp"
+        "tuple": "cpp",
+        "queue": "cpp"
     }
 }
