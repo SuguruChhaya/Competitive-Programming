@@ -18,7 +18,8 @@ vector <vector <long long>> adj = {
     {0, -1},
     {0, 1}
 };
-vector <vector<set<vector<vector<char>>>>> visited;
+//vector <vector<set<vector<vector<char>>>>> visited;
+vector<vector<bool>> visited;
 set<vector<vector<char>>> ans;
 vector <vector <vector <char>>> arr;
 
@@ -68,6 +69,7 @@ void dfs(long long row, long long col, vector<vector<char>>curr){
     //?Can't we check first??
 
     //!Stop as soon as we hit winning. 
+    //?Couldn't I reset the visited arr every time I hit?
     else if (!visited[row][col].count(curr)){
         visited[row][col].insert(curr);
         auto next = curr;
@@ -86,7 +88,8 @@ void dfs(long long row, long long col, vector<vector<char>>curr){
 int main(){
     long long n;
     cin >> n;
-    visited.resize(n, vector <set<vector<vector<char>>>>(n));
+    //visited.resize(n, vector <set<vector<vector<char>>>>(n));
+    visited.resize(n, vector<bool>(n));
     arr.resize(n, vector <vector <char>>(n, vector <char>(3)));
     long long row, col;
     //set <char> ok = {'B', 'O', 'M'};

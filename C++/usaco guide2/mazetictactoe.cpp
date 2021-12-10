@@ -55,6 +55,7 @@ bool found(vector <vector <char>> arr){
 }
 
 int main(){
+    
     long long n;
     cin >> n;
     vector <vector <vector <char>>> arr(n, vector <vector <char>>(n, vector <char>(3)));

@@ -1,33 +1,15 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <set>
+#include <bits/stdc++.h>
 using namespace std;
-/*
+
 int main(){
-    set <string> s;
-    s.insert("abba");
-    s.insert("aabb");
+    //!upper_bound: purely greater
+    set <long long> s = {1, 3};
+    long long a = *s.upper_bound(2);
+    cout << a << endl;
 
-    //*I can access the elements linearly like this. 
-    string second = *next(s.begin(),1);
-    cout << second;
-
-    map<int, int> a= {{1, 2}, {2, 4}};
-    cout << a.size()<< "yo" << endl;
-
-    string temp;
-    temp = 'a' * 4;
-    cout << temp;
-}
-*/
-int main() {
-    set <pair <long long, string>> hashset;
-    hashset.insert({5, "a"});
-    hashset.insert({3, "abc"});
-    auto it = hashset.begin();
-    it++;
-    pair <long long, string> temp = *it;
-    cout << temp.first;
+    deque <long long> q;
+    q.push_back(3);
+    q.push_back(2);
+    sort(q.begin(), q.end());
+    cout << q[0] << endl;
 }
